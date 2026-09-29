@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import axios from "axios";
+import api from "./api";
 import { Context } from "./Context";
 import { useNavigate, Link } from "react-router-dom";
 import { DotLoader } from "react-spinners";
@@ -15,7 +15,7 @@ export default function Login() {
     event.preventDefault();
     setLoading(true);
     try {
-      const user = await axios.post("/login", { email, password });
+      const user = await api.post("/login", { email, password });
       console.log(user.data);
       localStorage.setItem("token", user.data.token);
       setUser(user.data.user);

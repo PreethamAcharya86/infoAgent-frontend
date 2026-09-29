@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import axios from "axios";
+import api from "./api";
 import { Context } from "./Context";
 import { useNavigate, Link } from "react-router-dom";
 import { DotLoader } from "react-spinners";
@@ -18,7 +18,7 @@ export default function Signup() {
     event.preventDefault();
     setLoading(true);
     try {
-      const user = await axios.post("/signup", { email, username, password });
+      const user = await api.post("/signup", { email, username, password });
       localStorage.setItem("token", user.data.token);
       localStorage.setItem("user", JSON.stringify(user.data.user));
       setUser(user.data.user);
