@@ -1,0 +1,17 @@
+.signup-bg {
+    background-color: rgb(31, 31, 31) ;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #cecfd9, #b775a0);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.signup-page {
+    height: 100svh;
+}

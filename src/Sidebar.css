@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+.sidebar-main {
+    width: 340px;
+    background-color: rgba(0, 0, 0, 0.335);
+}
+
+.newChat-btn {    
+    border: 1px solid rgba(255, 255, 255, 0.108);
+    border-radius: 5px;   
+}
+.thread {
+    border-bottom: 1px solid rgba(39, 39, 39, 0.509);
+}
+.thread:hover .del-icon {
+    opacity: 1;
+}
+.del-icon {
+    opacity: 0;
+}
+.del-btn:hover .del-icon {
+    color: rgb(180, 64, 64);
+}
+
+.active-thread{
+    background: linear-gradient(
+  135deg,          
+  #302f2f 80%,    
+  #3a3a3a 50%     
+);
+}
+.active-thread .del-icon {
+    opacity: 1;
+}
+.overlay-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.84); 
+  z-index: 40; 
+}
+.user-div {
+    border: 1px solid rgba(255, 255, 255, 0.261);
+    background-color: rgb(31, 31, 31);
+}
+.logout-icon:hover i {
+    color: rgb(188, 120, 120);
+}
+.thread-container {
+    font-size: 0.9rem;
+}
+.thread {
+    @apply hover:bg-gray-700 mx-2 rounded-md p-1;
+}

@@ -1,0 +1,21 @@
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #cecfd9, #b775a0);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.user-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #cecfd9, #c589ca);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.prompt-div {
+    background-color: rgb(57, 57, 57);
+}

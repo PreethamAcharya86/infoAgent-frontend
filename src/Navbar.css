@@ -1,0 +1,16 @@
+.navbar {
+    background-color: rgb(59, 59, 59);
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(90deg, #cecfd9, #b775a0);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.model {
+    border: 1px solid rgba(0, 0, 0, 0.183);
+}

@@ -1,0 +1,8 @@
+.model-behave {
+    border: 1px solid rgb(84, 80, 80);
+}
+
+.model-behave:hover {
+    border: 0.5px solid white;
+    background-color: rgba(14, 14, 14, 0.816);
+}
